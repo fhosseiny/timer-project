@@ -12,12 +12,12 @@
 <body>
     <div class="container">
         <div class="timer-wrapper">
-        <h1> 01:01:01</h1>
+        <h1 id="counter">00:00:00</h1>
     </div>
     <div class="buttons-wrappers">
-        <button type="button" class="btn btn-info">Start</button>
-        <button type="button" class="btn btn-info">Stop</button>
-        <button type="button" class="btn btn-info">Reset</button>
+        <button type="button" class="btn btn-info" onclick="start()">Start</button>
+        <button type="button" class="btn btn-info" onclick="stop()">Stop</button>
+        <button type="button" class="btn btn-info" onclick="reset()">Reset</button>
      
     </div>
     </div>
