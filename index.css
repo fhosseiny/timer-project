@@ -1,10 +1,16 @@
 .container{
-    background-color: yellow;
+   background-color: yellow;
    height: 100vh;
    display: flex;
    flex-direction: column;
    align-items: center;
-  
+   
+}
+
+.timer-wrapper{
+    margin-top: 120px;
+    margin-bottom: 30px;
+    font-size: 60px; 
 }
 body{
     margin: 0;
