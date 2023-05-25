@@ -35,10 +35,10 @@ function start() {
 function stop() {
     document.getElementById("start-button").removeAttribute("disabled")
     clearInterval(interval);
+    document.getElementById("close-modal-button").click()
 }
 
 function reset() {
-    clearInterval(interval);
-    document.getElementById("counter").innerHTML
-     = "00:00:00"
+    stop()
+    document.getElementById("counter").innerHTML = "00:00:00"
 }
