@@ -1,6 +1,7 @@
 let interval;
 
 function start() {
+    document.getElementById("start-button").setAttribute("disabled","true")
 
     interval = setInterval(()  => { 
         
@@ -32,10 +33,12 @@ function start() {
 }
 
 function stop() {
-clearInterval(interval);
+    document.getElementById("start-button").removeAttribute("disabled")
+    clearInterval(interval);
 }
 
 function reset() {
+    clearInterval(interval);
     document.getElementById("counter").innerHTML
      = "00:00:00"
 }
